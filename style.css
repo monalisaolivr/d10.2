@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'android';
+    src: url('fontes/idroid.otf');
+}
+
+@font-face {
+    font-family: 'android2';
+    src: url('__MACOSX/fontes/._indroid.otf');
+}
+
+@font-face {
+    font-family: 'titulo';
+    src: url('fontes/Oswald-Light.ttf');
+}
+
+body {
+    background-color: rgb(132, 225, 173);    
+    margin: auto;
+}
+
+/*home*/
+header {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(60, 214, 129), rgb(23, 80, 49));
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.416);
+}
+
+#home {
+    text-align: center;
+
+} 
+
+#home h1 {
+    font-family: 'titulo', Arial, Helvetica, sans-serif;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.623);
+
+    padding: 25px 0px;
+    margin: 0;
+}
+
+#home p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.822);
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.623);
+
+    padding: 0px 0px 28px 0px;
+}
+
+nav {
+    text-indent: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+nav > a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.623);
+    text-decoration: none;
+
+    padding: 0px 10px;
+}
+
+nav > a:hover {
+    color: rgb(88, 166, 255);
+    text-decoration: underline;
+}
+
+/*noticias / curiosidades*/
+
+main{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.416);
+
+    padding: 10px 20px 10px 20px;
+    margin: 0px 15%;
+}
+
+h2 {
+    color: rgb(75, 128, 99);
+
+    font-family: 'android', Arial, Helvetica, sans-serif;
+    text-indent: 15px;
+    text-align: left;
+}
+
+h3 {
+    color: rgb(75, 128, 99);
+    background-image: linear-gradient(to right, rgb(206, 237, 220), rgb(255, 255, 255));
+
+    font-family: 'android', Arial, Helvetica, sans-serif;
+    text-indent: 15px;
+    text-align: left;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 35px;
+    line-height: 1.7;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*links*/
+
+main p a {
+    color: rgb(0, 128, 0);
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main p a:hover {
+    color: rgb(88, 166, 255);
+    text-decoration: underline;
+}
+
+.links::after {
+    content: ' 🔗';
+} 
+
+article a {
+    color: rgb(0, 128, 0);
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+article a:hover{
+    color: rgb(88, 166, 255);
+    text-decoration: underline;
+}
+
+/*imagens*/
+
+img {
+    display: block;
+
+    text-align: center;
+    margin: auto;
+
+    width: 100%;
+}
+
+#bugdroid {
+    text-align: center;
+    margin: auto;
+
+    width: 50%;
+}
+
+/*video*/
+
+#video {
+    background-color: rgb(23, 80, 49);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.416);
+    text-align: center;
+
+    padding: 1%;
+    margin: 0% 15%;
+}
+
+#video iframe {
+    display: block;
+
+    text-align: center;
+    margin: auto;
+
+    width: 100%;
+}
+
+/*curiosidades*/
+
+article {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.416);
+
+    padding: 20px 20px;
+    margin: 0px 15%;
+
+    font-family: sans-serif, Arial, Helvetica;
+    text-align: left;
+}
+
+article p {
+    line-height: 1.7;
+    text-indent: 45px;
+}
+
+#curiosidades {
+    background-color: rgb(197, 235, 214);
+    border-radius: 8px;
+
+    padding: 2px;
+}
+
+#especial {
+    background-color: rgb(47, 168, 102);
+    color: rgb(255, 255, 255);
+    border-radius: 8px 8px 0px 0px;
+
+    text-indent: 0px;
+
+    margin: -2px;
+    padding: 10px;
+}
+
+/*lista*/
+
+li::before {
+    content: '✔ ';
+}
+
+#lista {
+    display: inline-block;
+    list-style: none;
+    text-align: left;
+
+    margin: auto;
+    padding-left: 30px;
+}
+
+#lista2 {
+    display: inline-block;
+    list-style: none;
+    text-align: left;
+
+    margin: auto;
+    padding-left: 16%;
+
+}
+
+/*rodapé*/
+
+footer {
+    background-color: rgb(23, 80, 49);
+    color: rgb(255, 255, 255);
+
+    text-align: center;
+    font-weight: lighter;
+}
+
+/*links rodape*/
+
+strong .github {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+strong .github:hover {
+    color: rgb(88, 166, 255);
+    text-decoration: underline;
+}
